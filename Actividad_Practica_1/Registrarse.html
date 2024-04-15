@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad Practica 1</title>
 </head>
-<body>
-    
+
+<body style="width: 1296px;  margin: auto;">
+    <header style="background-color: orange;">
+        <div>
+            <ul style="list-style: none;display: flex;padding: 6px;">
+                <li><a href="Home.html"
+                        style="text-decoration: none; color: white;border: 1px orangered solid; background-color: orangered; margin-right: 5px;padding: 5px;">Home</a>
+                </li>
+                <li><a href="Acerca.html"
+                        style="text-decoration: none; color: white;border: 1px orangered solid; background-color: orangered; margin-right: 5px;padding: 5px;">Acerca
+                        de</a></li>
+                <li><a href="Contacto.html"
+                        style="text-decoration: none; color: white;border: 1px orangered solid; background-color: orangered; margin-right: 5px;padding: 5px;">Contacto</a>
+                </li>
+                <li><a href="Registrarse.html"
+                        style="text-decoration: none; color: white;border: 1px orangered solid; background-color: orangered; margin-right: 5px;padding: 5px;">Registrarse</a>
+                </li>
+                <li><a href="Sucursales.html"
+                        style="text-decoration: none; color: white;border: 1px orangered solid; background-color: orangered; margin-right: 5px;padding: 5px;">Sucursales</a>
+                </li>
+            </ul>
+        </div>
+        <h1 style="text-align: center;">Recetas de cocina</h1>
+    </header>
+    <main style="height: 400px;">
+        <form method="post" action="https://formspree.io/f/xvoevngn">
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="Nombre" required placeholder="Ingrese su nombre aqui">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su apellido aqui">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Direccion">Direccion</label>
+                <input type="text" id="Direccion" name="Direccion" placeholder="Ingrese su direccion aqui">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Ciudad">Ciudad</label>
+                <input type="text" id="Ciudad" name="Ciudad" value="C.A.B.A">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Postal">Codigo Postal</label>
+                <input type="text" id="Postal" name="Postal" placeholder="Ingrese su codigo postal aqui">
+
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Fecha">Fecha de Nacimiento (mm/dd/yyyy)</label>
+                <input type="text" id="Fecha" name="Fecha">
+
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Genero">Genero</label>
+                <input type="radio" id="Genero" value="Hombre" name="Genero" checked>Hombre
+                <input type="radio" name="Genero" value="Mujer">Mujer
+                <input type="radio" name="Genero" value="Otro">Otro
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="Estudios">Estudios</label>
+                <input type="checkbox" name="Estudios" value="Primario" id="Estudios">Primario
+                <input type="checkbox" name="Estudios" value="Secundario">Secundario
+                <input type="checkbox" name="Estudios" value="Terciario">Terciario
+                <input type="checkbox" name="Estudios" value="Universitarios">Universitarios
+                <input type="checkbox" name="Estudios" value="Otro">Otro
+            </div>
+            <div style="margin-top: 10px;">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+
+    </main>
+    <footer style="background-color: orange;height: 80px; margin-top: 50px;">
+        <section style="text-align: center;">
+            <img src="/Actividad_Practica_1/Imagen/facebook.png" alt="">
+            <img src="/Actividad_Practica_1/Imagen/instagram.png" alt="">
+            <img src="/Actividad_Practica_1/Imagen/linkedin.png" alt="">
+            <img src="/Actividad_Practica_1/Imagen/twitter.png" alt="">
+        </section>
+        <article style="padding: 15px;">
+            <span style="font-weight: 700;text-align: center;display: block;">Derechos Reservados @2020</span>
+        </article>
+    </footer>
 </body>
+
 </html>
