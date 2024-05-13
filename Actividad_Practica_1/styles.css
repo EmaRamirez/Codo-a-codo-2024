@@ -1,0 +1,65 @@
+body {
+    width: 1296px;
+    margin: auto;
+}
+
+
+header {
+    background-color: orange;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 6px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    border: 1px orangered solid;
+    background-color: orangered;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+main {
+    height: 400px;
+}
+
+#linkReceta {
+    margin-top: 10px;
+}
+
+#linkReceta>a {
+    text-decoration: none;
+    color: white;
+    border: 1px orangered solid;
+    background-color: orangered;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+footer {
+    background-color: orange;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.sec_link_img {
+    text-align: center;
+}
+
+.footer_article {
+    padding: 15px;
+}
+
+.footer_article>span {
+    font-weight: 700;
+    text-align: center;
+    display: block;
+}
