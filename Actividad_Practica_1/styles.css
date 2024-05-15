@@ -1,11 +1,17 @@
 body {
     width: 1296px;
     margin: auto;
+
 }
 
 
 header {
-    background-color: orange;
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    padding-top: 5px;
 }
 
 ul {
@@ -17,8 +23,9 @@ ul {
 li a {
     text-decoration: none;
     color: white;
-    border: 1px orangered solid;
-    background-color: orangered;
+    border: 1px gray solid;
+    border-radius: 10px;
+    background-color: gray;
     margin-right: 5px;
     padding: 5px;
 }
@@ -38,20 +45,29 @@ main {
 #linkReceta>a {
     text-decoration: none;
     color: white;
-    border: 1px orangered solid;
-    background-color: orangered;
+    border: 1px gray solid;
+    background-color: gray;
+    border-radius: 10px;
     margin-right: 5px;
     padding: 5px;
 }
 
 footer {
-    background-color: orange;
+    background-color: black;
     height: 80px;
     margin-top: 50px;
+    color: white;
 }
 
 .sec_link_img {
     text-align: center;
+
+
+}
+
+.sec_link_img img {
+    background-color: white;
+    margin-top: 10px;
 }
 
 .footer_article {
@@ -61,5 +77,22 @@ footer {
 .footer_article>span {
     font-weight: 700;
     text-align: center;
+    display: block;
+}
+
+.remarcar {
+    font-weight: 700;
+}
+
+.container-receta p {
+    text-align: justify;
+}
+
+
+.form-container {
+    margin-bottom: 10px;
+}
+
+.form-texarea label{
     display: block;
 }

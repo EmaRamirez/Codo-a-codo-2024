@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <div>
+        <nav class="nav">
             <ul>
                 <li><a href="Index.html">Home</a>
                 </li>
@@ -22,52 +22,79 @@
                 <li><a href="Sucursales.html">Sucursales</a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <h1>Recetas de cocina</h1>
     </header>
     <main style="height: 400px;">
         <form method="post" action="https://formspree.io/f/xvoevngn">
-            <div>
+            <h2>Formulario de registro</h2>
+            <div class="form-container">
                 <label for="Nombre">Nombre</label>
                 <input type="text" name="Nombre" id="Nombre" required placeholder="Ingrese su nombre aqui">
-            </div>
-            <div style="margin-top: 10px;">
+
                 <label for="Apellido">Apellido</label>
                 <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su apellido aqui">
             </div>
-            <div style="margin-top: 10px;">
-                <label for="Direccion">Direccion</label>
-                <input type="text" id="Direccion" name="Direccion" placeholder="Ingrese su direccion aqui">
-            </div>
-            <div style="margin-top: 10px;">
+            <div class="form-container">
+                <div class="form-container">
+                    <label for="">Direccion</label>
+                </div>
+                <label for="calle">Calle:</label>
+                <input type="text" id="calle" name="calle" placeholder="Ingrese su calle aqui">
+                <label for="calleNro">Numero</label>
+                <input type="text" name="calleNro" id="calleNro" placeholder="ingrese el numero...">
+
                 <label for="Ciudad">Ciudad</label>
                 <input type="text" id="Ciudad" name="Ciudad" value="C.A.B.A">
-            </div>
-            <div style="margin-top: 10px;">
+
                 <label for="Postal">Codigo Postal</label>
                 <input type="text" id="Postal" name="Postal" placeholder="Ingrese su codigo postal aqui">
 
             </div>
-            <div style="margin-top: 10px;">
-                <label for="Fecha">Fecha de Nacimiento (mm/dd/yyyy)</label>
+            <div class="form-container">
+                <label for="telefono">Telefono:</label>
+                <input type="text" name="telefono" id="telefono" placeholder="ingrese su telefino aqui">
+                <label for="Fecha">Fecha de Nacimiento</label>
                 <input type="text" id="Fecha" name="Fecha">
-
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo">
+                <label for="clave">Clave:</label>
+                <input type="password" name="clave" id="clave">
+                <label for="tp3">Link del TP 3:</label>
+                <input type="text" name="tp3" id="tp3">
             </div>
-            <div style="margin-top: 10px;">
+            <div class="form-container" style="margin-top: 10px;">
                 <label for="Genero">Genero</label>
                 <input type="radio" id="Genero" value="Hombre" name="Genero" checked>Hombre
                 <input type="radio" name="Genero" value="Mujer">Mujer
                 <input type="radio" name="Genero" value="Otro">Otro
             </div>
-            <div style="margin-top: 10px;">
-                <label for="Estudios">Estudios</label>
-                <input type="checkbox" name="Estudios" value="Primario" id="Estudios">Primario
-                <input type="checkbox" name="Estudios" value="Secundario">Secundario
-                <input type="checkbox" name="Estudios" value="Terciario">Terciario
-                <input type="checkbox" name="Estudios" value="Universitarios">Universitarios
-                <input type="checkbox" name="Estudios" value="Otro">Otro
+            <div class="form-container">
+                <label for="Estudios">Conocimientos Previos:</label>
+                <input type="checkbox" name="Estudios" value="Html" id="Estudios">Html
+                <input type="checkbox" name="Estudios" value="Css">Css
+                <input type="checkbox" name="Estudios" value="Bootstrap">Bootstrap
+                <input type="checkbox" name="Estudios" value="javascript">javascript
+                <input type="checkbox" name="Estudios" value="Typescript">Typescript
+                <input type="checkbox" name="Estudios" value="Angular">Angular
+                <input type="checkbox" name="Estudios" value="Bases de datos">Bases de datos
+                <input type="checkbox" name="Estudios" value=" Python">Python
+                <input type="checkbox" name="Estudios" value=" Django">Django
             </div>
-            <div style="margin-top: 10px;">
+            <div class="form-container">
+                <label for="estudios">Estudios</label>
+                <select name="estudios" id="estudios">
+                    <option value="Primario">Primario</option>
+                    <option value="Secundario">Secundario</option>
+                    <option value="Terciario">Terciario</option>
+                    <option value="Universitario">Universitario</option>
+                </select>
+            </div>
+            <div class="form-container form-texarea">
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div class="form-container" style="margin-top: 10px;">
                 <input type="submit" value="Enviar">
             </div>
         </form>
